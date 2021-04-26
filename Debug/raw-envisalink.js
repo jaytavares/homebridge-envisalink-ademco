@@ -2,7 +2,7 @@
 // Raw debugging script for envisalink engine.
 
 var config = require('./config.json');
-var nap = require('./envisaLink.js');
+var nap = require('../envisalink.js');
 var alarm = new nap(console,config);
 alarm.connect()
 

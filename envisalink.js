@@ -53,7 +53,7 @@ class EnvisaLink extends EventEmitter {
     this.isConnectionIdleHandle = undefined;
 
     // Display starting of connection.
-    this.log("Starting connection to envisalink module at: " + this.options.host + ", port: " + this.options.port);
+    _this.log.log("Starting connection to envisalink module at: " + this.options.host + ", port: " + this.options.port);
    
     actual = net.createConnection({
       port: this.options.port,
